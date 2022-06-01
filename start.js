@@ -73,8 +73,6 @@ L.geoJSON(data, {
 
 
 // Hulknurgal klõpsamine. Allikas: https://jsfiddle.net/guspersson/yfe1g5zs/
-
-//Handle click on polygon
 var onPolyClick = function (event) {
   //callFancyboxIframe('flrs.html')
   document.getElementById('tunnus').innerHTML = event.target.options.tunnus;
@@ -96,7 +94,9 @@ for (const hulknurk of Hulknurgad) {
       dashArray: '20, 20', dashOffset: '0'
     }
   );
-  poly.on('click', onPolyClick);
+
+  poly.bindPopup("Katastriüksus!");
+  // poly.on('click', onPolyClick);
 
   //Add polygon to map
   poly.on('loaded', function (e) {
@@ -105,11 +105,11 @@ for (const hulknurk of Hulknurgad) {
 }
 
 
+// adding GeoJSON by fetch
+
 function onEachFeature(feature, layer) {
   layer.bindPopup(feature.properties.nimi);
 }
-
-// adding GeoJSON by fetch
 
 // fetch("kr_kaitsealaPolygon.geojson")
 fetch("MKA.geojson")
