@@ -79,8 +79,6 @@ var onPolyClick = function (event) {
     .setLatLng(event.latlng)
     .setContent(event.target.options.tunnus + ' ' + event.target.options.aadress)
     .openOn(map);
-  // document.getElementById('tunnus').innerHTML = event.target.options.tunnus;
-  // document.getElementById('aadress').innerHTML = event.target.options.aadress;
 };
 
 // Lisa katastriüksused.
@@ -91,11 +89,11 @@ for (const hulknurk of Hulknurgad) {
       'tunnus': hulknurk[0],
       'aadress': hulknurk[1],
       /* Vt: https://leafletjs.com/reference.html#path */
-      weight: 1,
+      weight: 3,
       color: 'black',
       fillColor: 'tomato',
       fillOpacity: 0,
-      dashArray: '20, 20', dashOffset: '0'
+      dashArray: '2, 2', dashOffset: '0'
     }
   );
 
