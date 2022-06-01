@@ -79,7 +79,7 @@ var onPolyClick = function (event) {
   });
   popup
     .setLatLng(event.latlng)
-    .setContent(event.target.options.tunnus + ' ' + event.target.options.aadress)
+    .setContent(event.target.options.tunnus + '<br> ' + event.target.options.aadress)
     .openOn(map);
 };
 
@@ -92,7 +92,7 @@ for (const hulknurk of Hulknurgad) {
       'aadress': hulknurk[1],
       /* Vt: https://leafletjs.com/reference.html#path */
       weight: 3,
-      color: 'tomato',
+      color: 'coral',
       fillColor: 'tomato',
       fillOpacity: 0,
       dashArray: '3, 6', dashOffset: '0'
