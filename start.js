@@ -74,9 +74,13 @@ L.geoJSON(data, {
 
 // Hulknurgal klõpsamine. Allikas: https://jsfiddle.net/guspersson/yfe1g5zs/
 var onPolyClick = function (event) {
-  //callFancyboxIframe('flrs.html')
-  document.getElementById('tunnus').innerHTML = event.target.options.tunnus;
-  document.getElementById('aadress').innerHTML = event.target.options.aadress;
+  var popup = L.popup();
+  popup
+    .setLatLng(event.latlng)
+    .setContent(event.target.options.tunnus + ' ' + event.target.options.aadress)
+    .openOn(map);
+  // document.getElementById('tunnus').innerHTML = event.target.options.tunnus;
+  // document.getElementById('aadress').innerHTML = event.target.options.aadress;
 };
 
 // Lisa katastriüksused.
@@ -95,8 +99,8 @@ for (const hulknurk of Hulknurgad) {
     }
   );
 
-  poly.bindPopup("Katastriüksus!");
-  // poly.on('click', onPolyClick);
+  // poly.bindPopup("Katastriüksus!");
+  poly.on('click', onPolyClick);
 
   //Add polygon to map
   poly.on('loaded', function (e) {
