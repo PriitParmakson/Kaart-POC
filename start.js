@@ -49,29 +49,9 @@ updateMap(config.map);
 
 initBasemaps(config.basemaps);
 
-// GeoJSON faili lugemine.
-// https://gis.stackexchange.com/questions/305646/import-local-geojson-file-into-leaflet
+// Lisa katastriüksused.
 
 /*
-function fetchJSON(url) {
-  return fetch(url)
-    .then(function(response) {
-      return response.json();
-    });
-}
-
-var data = fetchJSON('kr_kaitsealaPolygon.geojson')
-            .then(function(data) { return data });
-L.geoJSON(data, {
-  style: function (feature) {
-      return {color: feature.properties.color};
-  }
-}).bindPopup(function (layer) {
-  return layer.feature.properties.description;
-}).addTo(map);
-*/
-
-
 // Hulknurgal klõpsamine. Allikas: https://jsfiddle.net/guspersson/yfe1g5zs/
 var onPolyClick = function (event) {
   var popup = L.popup({
@@ -83,14 +63,13 @@ var onPolyClick = function (event) {
     .openOn(map);
 };
 
-// Lisa katastriüksused.
 for (const hulknurk of Hulknurgad) {
   var poly = new L.Polygon(
     hulknurk[2],
     {
       'tunnus': hulknurk[0],
       'aadress': hulknurk[1],
-      /* Vt: https://leafletjs.com/reference.html#path */
+      // Vt: https://leafletjs.com/reference.html#path
       weight: 3,
       color: 'coral',
       fillColor: 'tomato',
@@ -107,9 +86,33 @@ for (const hulknurk of Hulknurgad) {
     map.fitBounds(e.target.getBounds());
   }).addTo(map);
 }
+*/
+
+function katPopup(feature, layer) {
+  layer.bindPopup(feature.properties.L_AADRESS);
+}
+
+fetch("VALIK.geojson")
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    // use geoJSON. Vt: https://leafletjs.com/examples/geojson/,
+    // sh stiili määramine.
+    L.geoJSON(data, {
+      style: {
+        color: 'tomato',
+        weight: 1,
+        fillColor: 'green',
+        fillOpacity: 0
+      },
+      onEachFeature: katPopup,
+    }).addTo(map);
+  });
 
 
-// adding GeoJSON by fetch
+
+// Lisa MKA piir.
 
 function onEachFeature(feature, layer) {
   layer.bindPopup(feature.properties.nimi);
