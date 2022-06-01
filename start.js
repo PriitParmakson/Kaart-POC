@@ -111,7 +111,7 @@ for (const hulknurk of Hulknurgad) {
       weight: 3,
       color: 'tomato',
       fillColor: 'tomato',
-      fillOpacity: 0.1
+      fillOpacity: 0
     }
   );
   poly.on('click', onPolyClick);
