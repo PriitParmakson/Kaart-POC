@@ -88,7 +88,7 @@ fetch("kr_kaitsealaPolygon.geojson")
         fillColor: 'green',
         fillOpacity: 0
       },
-      onEachFeature: onEachFeature,
+      // onEachFeature: onEachFeature,
     }).addTo(map);
   });
 
