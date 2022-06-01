@@ -81,9 +81,13 @@ fetch("kr_kaitsealaPolygon.geojson")
     return response.json();
   })
   .then(function (data) {
-    // use geoJSON
+    // use geoJSON. Vt: https://leafletjs.com/examples/geojson/,
+    // sh stiili määramine.
     L.geoJSON(data, {
-      style: { fillColor: 'green' },
+      style: {
+        fillColor: 'green',
+        fillOpacity: 0
+      },
       onEachFeature: onEachFeature,
     }).addTo(map);
   });
@@ -97,16 +101,17 @@ var onPolyClick = function (event) {
   document.getElementById('aadress').innerHTML = event.target.options.aadress;
 };
 
-// Lisa hulknurgad.
+// Lisa katastriüksused.
 for (const hulknurk of Hulknurgad) {
   var poly = new L.Polygon(hulknurk[2],
     {
       'tunnus': hulknurk[0],
       'aadress': hulknurk[1],
       /* Vt: https://leafletjs.com/reference.html#path */
-      weight: 1,
+      weight: 3,
       color: 'tomato',
-      fillColor: 'tomato'
+      fillColor: 'tomato',
+      fillOpacity: 0.1
     }
   );
   poly.on('click', onPolyClick);
