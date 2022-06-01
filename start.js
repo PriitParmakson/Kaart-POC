@@ -75,8 +75,7 @@ function onEachFeature(feature, layer) {
   layer.bindPopup(feature.properties.nimi);
 }
 
-// adding geojson by fetch
-// of course you can use jquery, axios etc.
+// adding GeoJSON by fetch
 fetch("kr_kaitsealaPolygon.geojson")
   .then(function (response) {
     return response.json();
@@ -87,3 +86,23 @@ fetch("kr_kaitsealaPolygon.geojson")
       onEachFeature: onEachFeature,
     }).addTo(map);
   });
+
+// Lisa hulknurgad.
+for (const hulknurk of Hulknurgad) {
+  var poly = new L.Polygon(hulknurk[2],
+    {
+      'tunnus': hulknurk[0],
+      'aadress': hulknurk[1],
+      /* Vt: https://leafletjs.com/reference.html#path */
+      weight: 1,
+      color: 'tomato',
+      fillColor: 'tomato'
+    }
+  );
+  poly.on('click', onPolyClick);
+
+  //Add polygon to map
+  poly.on('loaded', function (e) {
+    map.fitBounds(e.target.getBounds());
+  }).addTo(map);
+}
