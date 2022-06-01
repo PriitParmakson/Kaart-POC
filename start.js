@@ -71,6 +71,40 @@ L.geoJSON(data, {
 }).addTo(map);
 */
 
+
+// Hulknurgal klõpsamine. Allikas: https://jsfiddle.net/guspersson/yfe1g5zs/
+
+//Handle click on polygon
+var onPolyClick = function (event) {
+  //callFancyboxIframe('flrs.html')
+  document.getElementById('tunnus').innerHTML = event.target.options.tunnus;
+  document.getElementById('aadress').innerHTML = event.target.options.aadress;
+};
+
+// Lisa katastriüksused.
+for (const hulknurk of Hulknurgad) {
+  var poly = new L.Polygon(
+    hulknurk[2],
+    {
+      'tunnus': hulknurk[0],
+      'aadress': hulknurk[1],
+      /* Vt: https://leafletjs.com/reference.html#path */
+      weight: 1,
+      color: 'black',
+      fillColor: 'tomato',
+      fillOpacity: 0,
+      dashArray: '20, 20', dashOffset: '0'
+    }
+  );
+  poly.on('click', onPolyClick);
+
+  //Add polygon to map
+  poly.on('loaded', function (e) {
+    map.fitBounds(e.target.getBounds());
+  }).addTo(map);
+}
+
+
 function onEachFeature(feature, layer) {
   layer.bindPopup(feature.properties.nimi);
 }
@@ -95,33 +129,5 @@ fetch("kr_kaitsealaPolygon.geojson")
     }).addTo(map);
   });
 
-// Hulknurgal klõpsamine. Allikas: https://jsfiddle.net/guspersson/yfe1g5zs/
-
-//Handle click on polygon
-var onPolyClick = function (event) {
-  //callFancyboxIframe('flrs.html')
-  document.getElementById('tunnus').innerHTML = event.target.options.tunnus;
-  document.getElementById('aadress').innerHTML = event.target.options.aadress;
-};
-
-// Lisa katastriüksused.
-for (const hulknurk of Hulknurgad) {
-  var poly = new L.Polygon(
-    hulknurk[2],
-    {
-      'tunnus': hulknurk[0],
-      'aadress': hulknurk[1],
-      /* Vt: https://leafletjs.com/reference.html#path */
-      weight: 2,
-      color: 'black',
-      fillColor: 'tomato',
-      fillOpacity: 0
-    }
-  );
-  poly.on('click', onPolyClick);
-
-  //Add polygon to map
-  poly.on('loaded', function (e) {
-    map.fitBounds(e.target.getBounds());
-  }).addTo(map);
-}
+// Leaflet Layers Control
+// https://leafletjs.com/examples/layers-control/
