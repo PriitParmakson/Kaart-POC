@@ -89,7 +89,7 @@ for (const hulknurk of Hulknurgad) {
 */
 
 function katPopup(feature, layer) {
-  layer.bindPopup(feature.properties.L_AADRESS);
+  layer.bindPopup(feature.properties.L_AADRESS + " " + feature.properties.OMVORM);
 }
 
 fetch("VALIK.geojson")
