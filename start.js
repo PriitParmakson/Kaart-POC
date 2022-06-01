@@ -76,6 +76,7 @@ function onEachFeature(feature, layer) {
 }
 
 // adding GeoJSON by fetch
+/*
 fetch("kr_kaitsealaPolygon.geojson")
   .then(function (response) {
     return response.json();
@@ -91,6 +92,7 @@ fetch("kr_kaitsealaPolygon.geojson")
       // onEachFeature: onEachFeature,
     }).addTo(map);
   });
+*/
 
 // Hulknurgal klõpsamine. Allikas: https://jsfiddle.net/guspersson/yfe1g5zs/
 
@@ -103,7 +105,8 @@ var onPolyClick = function (event) {
 
 // Lisa katastriüksused.
 for (const hulknurk of Hulknurgad) {
-  var poly = new L.Polygon(hulknurk[2],
+  var poly = new L.Polygon(
+    hulknurk[2],
     {
       'tunnus': hulknurk[0],
       'aadress': hulknurk[1],
