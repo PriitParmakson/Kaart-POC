@@ -74,7 +74,9 @@ L.geoJSON(data, {
 
 // Hulknurgal klõpsamine. Allikas: https://jsfiddle.net/guspersson/yfe1g5zs/
 var onPolyClick = function (event) {
-  var popup = L.popup();
+  var popup = L.popup({
+    "className": 'KatPopup'
+  });
   popup
     .setLatLng(event.latlng)
     .setContent(event.target.options.tunnus + ' ' + event.target.options.aadress)
