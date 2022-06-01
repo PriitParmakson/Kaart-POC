@@ -72,7 +72,7 @@ L.geoJSON(data, {
 */
 
 function onEachFeature(feature, layer) {
-  layer.bindPopup(feature.properties.name);
+  layer.bindPopup(feature.properties.nimi);
 }
 
 // adding geojson by fetch
