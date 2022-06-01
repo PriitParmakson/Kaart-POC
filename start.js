@@ -89,8 +89,8 @@ for (const hulknurk of Hulknurgad) {
       'tunnus': hulknurk[0],
       'aadress': hulknurk[1],
       /* Vt: https://leafletjs.com/reference.html#path */
-      weight: 1,
-      color: 'black',
+      weight: 2,
+      color: 'tomato',
       fillColor: 'tomato',
       fillOpacity: 0,
       dashArray: '4, 4', dashOffset: '0'
@@ -114,7 +114,7 @@ function onEachFeature(feature, layer) {
 }
 
 // fetch("kr_kaitsealaPolygon.geojson")
-fetch("MKA_geojson")
+fetch("MKA.geojson")
   .then(function (response) {
     return response.json();
   })
