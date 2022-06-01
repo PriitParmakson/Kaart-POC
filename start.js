@@ -77,7 +77,7 @@ function onEachFeature(feature, layer) {
 
 // adding geojson by fetch
 // of course you can use jquery, axios etc.
-fetch("POC.geojson")
+fetch("kr_kaitsealaPolygon.geojson")
   .then(function (response) {
     return response.json();
   })
