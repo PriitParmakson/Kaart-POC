@@ -93,7 +93,7 @@ function katPopup(feature, layer) {
   layer.bindPopup(content);
 }
 
-fetch("VALIK.geojson")
+fetch("N_M_KAT.geojson")
   .then(function (response) {
     return response.json();
   })
