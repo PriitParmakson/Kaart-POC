@@ -1,0 +1,278 @@
+/* Kuva kolm põhiosa - Päis, Kaart ja Jalus - on seatud
+http://jsfiddle.net/agorshkov23/5osbcpyc/
+eeskujul.
+*/
+
+#Päis {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20em;
+  margin-bottom: 1em;
+  padding-left: 1em;
+  padding-top: 1em;
+}
+
+#Kaart {
+	position: fixed;
+	top: calc(21em);
+  bottom: calc(4em);
+	left: 0;
+  right: 0;
+  vertical-align: top;
+}
+
+#Jalus {
+  position: fixed;
+  height: 3em;
+  width: 90%;
+  margin-top: 1em;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding-left: 1em;
+  /* Flexbox. Vt: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */ 
+  display: flex;
+  /* flex-flow: row wrap; */
+  justify-content: space-between;
+}
+
+.EN {
+  text-transform: capitalize;
+  color: hotpink;
+  font-size: 0.8em;
+  vertical-align: super;
+}
+
+.legendIcon {
+  height: 1em;
+}
+
+.tekstileht {
+  padding: 2em;
+}
+
+.Pealkiri {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  color: darkslategrey;
+}
+
+.Suurkiri {
+  font-size: 1.5em;
+}
+
+p, ul, li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.leaflet-popup-content {
+	max-height: 200px;
+	overflow: auto;
+	width: 300px;
+	padding: 5px;
+}
+
+.leaflet-feature-info-tab  th, td {
+	border: 1px solid #e5e5e5;
+	border-collapse: collapse;
+	font-family: arial;
+	font-size: 90%;
+	color: #333333;
+	text-align: center;
+}
+
+.leaflet-feature-info-tab  th{
+	background-color: #50A4ED;
+	font-weight:bold;
+}
+
+.leaflet-feature-info-tab  {
+	width:100%;
+}
+
+.leaflet-popup-tip {
+	height: 0px;
+}
+
+.hover-Polygon {
+	fill: black;
+	fill-opacity: 0.3;
+	cursor: default;
+/*    stroke-width: 0.7;*/
+}
+
+.hover-LineString {
+	stroke: black;
+	stroke-opacity: 0.3;
+	cursor: default;
+}
+
+.hover-Point {
+	cursor:default;
+    opacity:0.5;
+}
+
+.clicked {
+    stroke: url(#black-to-white);
+    stroke-width: 9;
+    stroke-opacity: 1;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    fill: transparent;
+    fill-opacity: 0;
+}
+
+.leaflet-control-layers-group-option {
+    padding-left:10px;
+}
+
+.info {
+    text-align: right;
+    padding: 6px 12px 6px 12px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: #fff;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+    border-radius: 4px;
+    border: 2px solid rgba(0,0,0,0.2);
+	background-clip: padding-box;
+    max-width: 350px;
+}
+
+.info-hidden {
+    display:none;
+}
+
+.info h4 {
+    margin: 0 0 5px;
+    color: #070505;
+}
+
+.info td {
+    text-align: right;
+    padding: 3px 6px 3px 6px;
+}
+
+text {
+    font: 10px sans-serif;
+    color: white;
+}
+text.value {
+    font-size: 120%;
+    fill: white;
+}
+
+.axisHorizontal path{
+    fill: none;
+}
+
+.axisHorizontal .tick line {
+    stroke-width: 1;
+    stroke: rgba(0, 0, 0, 0.2);
+}
+
+.bar {
+    fill: steelblue;
+    fill-opacity: .9;
+}
+
+.leaflet-control-about-toggle {
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	display: block;
+}
+
+.leaflet-control-about {
+	box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+	background: #fff;
+	border-radius: 4px;
+}
+
+.leaflet-control-about-textarea table,
+.leaflet-control-about-textarea td,
+.leaflet-control-about-textarea th {
+    border: none;
+}
+
+.leaflet-control-about-textarea table tbody tr td img {
+    text-align: center;
+    vertical-align: text-bottom;
+}
+
+.leaflet-control-about-toggle {
+	font: bold 18px 'Lucida Console', Monaco, monospace;
+	width: 36px;
+	height: 36px;
+	border-radius: 4px;
+    padding-top: 2px
+}
+
+.leaflet-control-about .leaflet-control-about-list,
+.leaflet-control-about-expanded .leaflet-control-about-toggle {
+	display: none;
+}
+
+.leaflet-control-about-expanded .leaflet-control-about-list {
+	display: block;
+	position: relative;
+}
+
+.leaflet-control-about-expanded {
+	padding: 6px 6px 6px 6px;
+	color: #333;
+	background: #fff;
+	max-width: 430px;
+    min-width: 30px;
+    min-height: 100px;
+    border-radius: 4px;
+    border: 2px solid rgba(0,0,0,0.2);
+	background-clip: padding-box;
+}
+
+.leaflet-control-about-scrollbar {
+	overflow-y: scroll;
+	padding-right: 5px;
+	}
+
+.leaflet-control-about-close {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    top: 40px;
+    right: 20px;
+    background-color: #fff;
+    border-radius: 32px;
+    text-align: center;
+    text-decoration: none;
+    font: bold 37px "Helvetica Neue", Arial, Helvetica, sans-serif;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+a.leaflet-control-about-close {
+    color: #333;
+    text-indent: 1px;
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+
+a.leaflet-control-about-close:hover {
+    background-color: #f4f4f4;
+}
+
+/* --- */
+
+.tooltip-inner, .vihje {
+  background-color: White;
+  font-family: 'Roboto', 'Arial', sans-serif !important;
+  font-size: 10pt !important;
+  color: Gray;
+}
+
+.ikoon { font-family: 'Material Icons';
+  font-size: 48px;
+}
