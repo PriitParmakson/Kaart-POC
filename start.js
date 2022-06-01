@@ -91,11 +91,11 @@ for (const hulknurk of Hulknurgad) {
       'tunnus': hulknurk[0],
       'aadress': hulknurk[1],
       /* Vt: https://leafletjs.com/reference.html#path */
-      weight: 2,
+      weight: 3,
       color: 'tomato',
       fillColor: 'tomato',
       fillOpacity: 0,
-      dashArray: '4, 4', dashOffset: '0'
+      dashArray: '3, 6', dashOffset: '0'
     }
   );
 
@@ -130,9 +130,16 @@ fetch("MKA.geojson")
         fillColor: 'green',
         fillOpacity: 0
       },
+      interactive: false
       // onEachFeature: onEachFeature,
     }).addTo(map);
   });
 
 // Leaflet Layers Control
 // https://leafletjs.com/examples/layers-control/
+
+// Leaflet API kokkuvõtlikult
+// https://docs.eegeo.com/eegeo.js/v0.1.759/docs/leaflet/L.LayerGroup/
+
+// Bubbling events
+// https://codepen.io/jmfolds/pen/NvEbPN
