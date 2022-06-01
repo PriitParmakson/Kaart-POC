@@ -76,7 +76,7 @@ function onEachFeature(feature, layer) {
 }
 
 // adding GeoJSON by fetch
-/*
+
 fetch("kr_kaitsealaPolygon.geojson")
   .then(function (response) {
     return response.json();
@@ -86,13 +86,14 @@ fetch("kr_kaitsealaPolygon.geojson")
     // sh stiili määramine.
     L.geoJSON(data, {
       style: {
+        color: 'green',
+        weight: 3,
         fillColor: 'green',
         fillOpacity: 0
       },
       // onEachFeature: onEachFeature,
     }).addTo(map);
   });
-*/
 
 // Hulknurgal klõpsamine. Allikas: https://jsfiddle.net/guspersson/yfe1g5zs/
 
@@ -111,8 +112,8 @@ for (const hulknurk of Hulknurgad) {
       'tunnus': hulknurk[0],
       'aadress': hulknurk[1],
       /* Vt: https://leafletjs.com/reference.html#path */
-      weight: 3,
-      color: 'tomato',
+      weight: 2,
+      color: 'black',
       fillColor: 'tomato',
       fillOpacity: 0
     }
