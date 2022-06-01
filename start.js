@@ -87,6 +87,15 @@ fetch("kr_kaitsealaPolygon.geojson")
     }).addTo(map);
   });
 
+// Hulknurgal klõpsamine. Allikas: https://jsfiddle.net/guspersson/yfe1g5zs/
+
+//Handle click on polygon
+var onPolyClick = function (event) {
+  //callFancyboxIframe('flrs.html')
+  document.getElementById('tunnus').innerHTML = event.target.options.tunnus;
+  document.getElementById('aadress').innerHTML = event.target.options.aadress;
+};
+
 // Lisa hulknurgad.
 for (const hulknurk of Hulknurgad) {
   var poly = new L.Polygon(hulknurk[2],

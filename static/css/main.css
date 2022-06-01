@@ -8,7 +8,7 @@ eeskujul.
   top: 0;
   left: 0;
   right: 0;
-  height: 20em;
+  height: 10em;
   margin-bottom: 1em;
   padding-left: 1em;
   padding-top: 1em;
@@ -16,7 +16,7 @@ eeskujul.
 
 #Kaart {
 	position: fixed;
-	top: calc(21em);
+	top: calc(11em);
   bottom: calc(4em);
 	left: 0;
   right: 0;
