@@ -111,7 +111,8 @@ function onEachFeature(feature, layer) {
 
 // adding GeoJSON by fetch
 
-fetch("kr_kaitsealaPolygon.geojson")
+// fetch("kr_kaitsealaPolygon.geojson")
+fetch("MKA.geojson")
   .then(function (response) {
     return response.json();
   })
