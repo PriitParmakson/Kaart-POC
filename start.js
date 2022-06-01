@@ -83,6 +83,7 @@ fetch("kr_kaitsealaPolygon.geojson")
   .then(function (data) {
     // use geoJSON
     L.geoJSON(data, {
+      style: { fillColor: 'green' },
       onEachFeature: onEachFeature,
     }).addTo(map);
   });
