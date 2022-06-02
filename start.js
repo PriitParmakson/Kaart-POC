@@ -89,7 +89,8 @@ for (const hulknurk of Hulknurgad) {
 */
 
 function katPopup(feature, layer) {
-  var content = feature.properties.L_AADRESS + " " + feature.properties.OMVORM;
+  var content = feature.properties.TUNNUS + " " + 
+  feature.properties.L_AADRESS + " " + feature.properties.OMVORM;
   layer.bindPopup(content);
 }
 
