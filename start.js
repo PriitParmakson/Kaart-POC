@@ -140,6 +140,26 @@ fetch("MKA.geojson")
     }).addTo(map);
   });
 
+
+// Lisa Staadioni metsa piir
+
+var staadioniMetsaPunktid = [
+  [59.39464, 24.66211],
+  [59.395369, 24.667308],
+  [59.393402, 24.668468],
+  [59.393934, 24.673521],
+  [59.39278, 24.674062],
+  [59.391375, 24.663986]
+];
+var staadioniMets = L.polygon(
+    staadioniMetsaPunktid,
+    {
+      color: 'red',
+      weight: 5,
+      opacity: 0.4
+    }
+  ).addTo(map);
+
 // Leaflet Layers Control
 // https://leafletjs.com/examples/layers-control/
 
