@@ -49,45 +49,6 @@ updateMap(config.map);
 
 initBasemaps(config.basemaps);
 
-// Lisa katastriüksused.
-
-/*
-// Hulknurgal klõpsamine. Allikas: https://jsfiddle.net/guspersson/yfe1g5zs/
-var onPolyClick = function (event) {
-  var popup = L.popup({
-    "className": 'KatPopup'
-  });
-  popup
-    .setLatLng(event.latlng)
-    .setContent(event.target.options.tunnus + '<br> ' + event.target.options.aadress)
-    .openOn(map);
-};
-
-for (const hulknurk of Hulknurgad) {
-  var poly = new L.Polygon(
-    hulknurk[2],
-    {
-      'tunnus': hulknurk[0],
-      'aadress': hulknurk[1],
-      // Vt: https://leafletjs.com/reference.html#path
-      weight: 3,
-      color: 'coral',
-      fillColor: 'tomato',
-      fillOpacity: 0,
-      dashArray: '3, 6', dashOffset: '0'
-    }
-  );
-
-  // poly.bindPopup("Katastriüksus!");
-  poly.on('click', onPolyClick);
-
-  //Add polygon to map
-  poly.on('loaded', function (e) {
-    map.fitBounds(e.target.getBounds());
-  }).addTo(map);
-}
-*/
-
 function katPopup(feature, layer) {
   var content = feature.properties.TUNNUS + " " + 
   feature.properties.L_AADRESS + " " + feature.properties.OMVORM;
@@ -154,9 +115,10 @@ var staadioniMetsaPunktid = [
 var staadioniMets = L.polygon(
     staadioniMetsaPunktid,
     {
-      color: 'red',
+      color: 'green',
       weight: 5,
-      opacity: 0.4
+      fillColor: 'green',
+      fillOpacity: 0.4
     }
   ).addTo(map);
 
