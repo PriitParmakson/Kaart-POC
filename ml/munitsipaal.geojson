@@ -159,6 +159,274 @@
           ]
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "TUNNUS": "78405:501:0303",
+        "HKOOD": "0482",
+        "MK_NIMI": "Harju maakond",
+        "OV_NIMI": "Tallinn",
+        "AY_NIMI": "Mustam�e linnaosa",
+        "L_AADRESS": "M�nniliiva t�nav T3",
+        "REGISTR": "2011\/10\/11",
+        "MUUDET": "2018\/12\/21",
+        "SIHT1": "Transpordimaa",
+        "SIHT2": null,
+        "SIHT3": null,
+        "SO_PRTS1": 100,
+        "SO_PRTS2": 0,
+        "SO_PRTS3": 0,
+        "PINDALA": 1933.0,
+        "RUUMPIND": 1933.0,
+        "REG_YHIK": "M",
+        "HARITAV": 0.0,
+        "ROHUMAA": 0.0,
+        "METS": 0.0,
+        "OUEMAA": 0.0,
+        "MUUMAA": 1933.0,
+        "KINNISTU": "26084101",
+        "MOOTVIIS": "kaardi ja plaani alusel",
+        "MOOTJA": "Omavalitsus",
+        "OMVIIS": "K� vastavusseviimine uue seadusega",
+        "OMVORM": "Munitsipaalomand",
+        "MAKS_HIND": 7650.0,
+        "MARKETEKST": "Pindala on ebat�pne (01.07.2018)",
+        "EKSPORT": "2022\/05\/27"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              24.678968641749652,
+              59.395880261701407
+            ],
+            [
+              24.679033927837686,
+              59.39588827311492
+            ],
+            [
+              24.679091017768531,
+              59.395767150045302
+            ],
+            [
+              24.67925254462833,
+              59.395436237370212
+            ],
+            [
+              24.679285867116263,
+              59.395368110552681
+            ],
+            [
+              24.679002910980916,
+              59.395070552985182
+            ],
+            [
+              24.678785576595089,
+              59.394842136919131
+            ],
+            [
+              24.678846804044039,
+              59.394716683662253
+            ],
+            [
+              24.678774633276884,
+              59.394707540706882
+            ],
+            [
+              24.678808099275205,
+              59.394620023263393
+            ],
+            [
+              24.678432250230856,
+              59.394581387284163
+            ],
+            [
+              24.67843115046821,
+              59.394605809979261
+            ],
+            [
+              24.678282173052889,
+              59.394975077903474
+            ],
+            [
+              24.678740167110739,
+              59.395019663978097
+            ],
+            [
+              24.679080529789605,
+              59.395318631305365
+            ],
+            [
+              24.679104631361845,
+              59.395637184827862
+            ],
+            [
+              24.678968641749652,
+              59.395880261701407
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "TUNNUS": "78405:501:0271",
+        "HKOOD": "0482",
+        "MK_NIMI": "Harju maakond",
+        "OV_NIMI": "Tallinn",
+        "AY_NIMI": "Mustam�e linnaosa",
+        "L_AADRESS": "M�nniliiva t�nav T4",
+        "REGISTR": "2010\/05\/20",
+        "MUUDET": "2018\/12\/21",
+        "SIHT1": "Transpordimaa",
+        "SIHT2": null,
+        "SIHT3": null,
+        "SO_PRTS1": 100,
+        "SO_PRTS2": 0,
+        "SO_PRTS3": 0,
+        "PINDALA": 424.0,
+        "RUUMPIND": 424.0,
+        "REG_YHIK": "M",
+        "HARITAV": 0.0,
+        "ROHUMAA": 0.0,
+        "METS": 0.0,
+        "OUEMAA": 0.0,
+        "MUUMAA": 424.0,
+        "KINNISTU": "25065001",
+        "MOOTVIIS": "m��distatud, L-EST",
+        "MOOTJA": "O� Via Geo",
+        "MOODUST": "2009\/11\/27",
+        "OMVIIS": "K� vastavusseviimine uue seadusega",
+        "OMVORM": "Munitsipaalomand",
+        "MAKS_HIND": 1680.0,
+        "MARKETEKST": "-",
+        "EKSPORT": "2022\/05\/27"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              24.678844773733395,
+              59.395865012090155
+            ],
+            [
+              24.678968641749652,
+              59.395880261701407
+            ],
+            [
+              24.679104631361845,
+              59.395637184827862
+            ],
+            [
+              24.679080529789605,
+              59.395318631305365
+            ],
+            [
+              24.678740167110739,
+              59.395019663978097
+            ],
+            [
+              24.679012330816676,
+              59.395305697693004
+            ],
+            [
+              24.679043003949005,
+              59.395458774063918
+            ],
+            [
+              24.678844773733395,
+              59.395865012090155
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "TUNNUS": "78405:501:0117",
+        "HKOOD": "0482",
+        "MK_NIMI": "Harju maakond",
+        "OV_NIMI": "Tallinn",
+        "AY_NIMI": "Mustam�e linnaosa",
+        "L_AADRESS": "S�pruse pst 263",
+        "REGISTR": "2007\/03\/28",
+        "MUUDET": "2018\/12\/21",
+        "SIHT1": "Transpordimaa",
+        "SIHT2": null,
+        "SIHT3": null,
+        "SO_PRTS1": 100,
+        "SO_PRTS2": 0,
+        "SO_PRTS3": 0,
+        "PINDALA": 1487.0,
+        "RUUMPIND": 1487.0,
+        "REG_YHIK": "M",
+        "HARITAV": 0.0,
+        "ROHUMAA": 0.0,
+        "METS": 0.0,
+        "OUEMAA": 0.0,
+        "MUUMAA": 1487.0,
+        "KINNISTU": "23124301",
+        "MOOTVIIS": "m��distatud, L-EST",
+        "MOOTJA": "OSA�HING DALAGOR",
+        "MOODUST": "2005\/11\/01",
+        "OMVIIS": "K� vastavusseviimine uue seadusega",
+        "OMVORM": "Munitsipaalomand",
+        "MAKS_HIND": 5890.0,
+        "MARKETEKST": "-",
+        "EKSPORT": "2022\/05\/27"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              24.67583693891633,
+              59.397610069457535
+            ],
+            [
+              24.676150729639531,
+              59.397642299379626
+            ],
+            [
+              24.676270795453075,
+              59.397393741959668
+            ],
+            [
+              24.676266737581631,
+              59.397366563017052
+            ],
+            [
+              24.675732504235651,
+              59.396903590621086
+            ],
+            [
+              24.675466488169704,
+              59.396981619215758
+            ],
+            [
+              24.67593157348502,
+              59.397383905575275
+            ],
+            [
+              24.675940607234299,
+              59.397413482699974
+            ],
+            [
+              24.675932747666884,
+              59.397443326177886
+            ],
+            [
+              24.67583693891633,
+              59.397610069457535
+            ]
+          ]
+        ]
+      }
     }
   ]
 }
