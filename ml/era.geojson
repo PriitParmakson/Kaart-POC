@@ -1,0 +1,518 @@
+{
+  "type": "FeatureCollection",
+  "name": "SHP_KATASTRIYKSUS_784",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "TUNNUS": "78405:501:0264",
+        "HKOOD": "0482",
+        "MK_NIMI": "Harju maakond",
+        "OV_NIMI": "Tallinn",
+        "AY_NIMI": "Mustam�e linnaosa",
+        "L_AADRESS": "M�nniliiva tn 1",
+        "REGISTR": "2010\/05\/20",
+        "MUUDET": "2018\/12\/21",
+        "SIHT1": "�hiskondlike ehitiste maa",
+        "SIHT2": null,
+        "SIHT3": null,
+        "SO_PRTS1": 100,
+        "SO_PRTS2": 0,
+        "SO_PRTS3": 0,
+        "PINDALA": 6791.0,
+        "RUUMPIND": 6791.0,
+        "REG_YHIK": "M",
+        "HARITAV": 0.0,
+        "ROHUMAA": 0.0,
+        "METS": 1494.0,
+        "OUEMAA": 0.0,
+        "MUUMAA": 5297.0,
+        "KINNISTU": "25064301",
+        "MOOTVIIS": "m��distatud, L-EST",
+        "MOOTJA": "O� Via Geo",
+        "MOODUST": "2009\/11\/27",
+        "OMVIIS": "K� vastavusseviimine uue seadusega",
+        "OMVORM": "Eraomand",
+        "MAKS_HIND": 26890.0,
+        "MARKETEKST": "-",
+        "EKSPORT": "2022\/05\/27"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              24.679245934657391,
+              59.392816288363051
+            ],
+            [
+              24.67926122575043,
+              59.392779763358519
+            ],
+            [
+              24.679288958678473,
+              59.392713909542607
+            ],
+            [
+              24.679472929706026,
+              59.392734054748594
+            ],
+            [
+              24.67927898968475,
+              59.392504351490665
+            ],
+            [
+              24.67870362050364,
+              59.392343674133684
+            ],
+            [
+              24.678688542264638,
+              59.39169894443063
+            ],
+            [
+              24.677917151283459,
+              59.391885781797519
+            ],
+            [
+              24.677604136977678,
+              59.392636603181025
+            ],
+            [
+              24.679245934657391,
+              59.392816288363051
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "TUNNUS": "78405:501:0265",
+        "HKOOD": "0482",
+        "MK_NIMI": "Harju maakond",
+        "OV_NIMI": "Tallinn",
+        "AY_NIMI": "Mustam�e linnaosa",
+        "L_AADRESS": "M�nniliiva tn 3",
+        "REGISTR": "2010\/05\/20",
+        "MUUDET": "2018\/12\/21",
+        "SIHT1": "Tootmismaa",
+        "SIHT2": null,
+        "SIHT3": null,
+        "SO_PRTS1": 100,
+        "SO_PRTS2": 0,
+        "SO_PRTS3": 0,
+        "PINDALA": 100.0,
+        "RUUMPIND": 100.0,
+        "REG_YHIK": "M",
+        "HARITAV": 0.0,
+        "ROHUMAA": 0.0,
+        "METS": 0.0,
+        "OUEMAA": 0.0,
+        "MUUMAA": 100.0,
+        "KINNISTU": "25064401",
+        "MOOTVIIS": "m��distatud, L-EST",
+        "MOOTJA": "O� Via Geo",
+        "MOODUST": "2009\/11\/27",
+        "OMVIIS": "K� vastavusseviimine uue seadusega",
+        "OMVORM": "Eraomand",
+        "MAKS_HIND": 1980.0,
+        "MARKETEKST": "-",
+        "EKSPORT": "2022\/05\/27"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              24.679288958678473,
+              59.392713909542607
+            ],
+            [
+              24.67926122575043,
+              59.392779763358519
+            ],
+            [
+              24.679536918010317,
+              59.392809937612746
+            ],
+            [
+              24.679472929706026,
+              59.392734054748594
+            ],
+            [
+              24.679288958678473,
+              59.392713909542607
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "TUNNUS": "78405:501:0266",
+        "HKOOD": "0482",
+        "MK_NIMI": "Harju maakond",
+        "OV_NIMI": "Tallinn",
+        "AY_NIMI": "Mustam�e linnaosa",
+        "L_AADRESS": "M�nniliiva tn 5",
+        "REGISTR": "2010\/05\/20",
+        "MUUDET": "2020\/04\/29",
+        "SIHT1": "�hiskondlike ehitiste maa",
+        "SIHT2": "�rimaa",
+        "SIHT3": null,
+        "SO_PRTS1": 80,
+        "SO_PRTS2": 20,
+        "SO_PRTS3": 0,
+        "PINDALA": 7377.0,
+        "RUUMPIND": 7377.0,
+        "REG_YHIK": "M",
+        "HARITAV": 0.0,
+        "ROHUMAA": 0.0,
+        "METS": 881.0,
+        "OUEMAA": 0.0,
+        "MUUMAA": 6496.0,
+        "KINNISTU": "25064501",
+        "MOOTVIIS": "m��distatud, L-EST",
+        "MOOTJA": "O� Via Geo",
+        "MOODUST": "2009\/11\/27",
+        "OMVIIS": "K� vastavusseviimine seadusega",
+        "OMVORM": "Eraomand",
+        "MAKS_HIND": 60150.0,
+        "MARKETEKST": "-",
+        "EKSPORT": "2022\/05\/27"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              24.679245934657391,
+              59.392816288363051
+            ],
+            [
+              24.677604136977678,
+              59.392636603181025
+            ],
+            [
+              24.677375795723581,
+              59.39318437995054
+            ],
+            [
+              24.679523637269959,
+              59.393417290327754
+            ],
+            [
+              24.67947258727563,
+              59.393089001301512
+            ],
+            [
+              24.679572426894367,
+              59.392852035107595
+            ],
+            [
+              24.679536918010317,
+              59.392809937612746
+            ],
+            [
+              24.67926122575043,
+              59.392779763358519
+            ],
+            [
+              24.679245934657391,
+              59.392816288363051
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "TUNNUS": "78405:501:0267",
+        "HKOOD": "0482",
+        "MK_NIMI": "Harju maakond",
+        "OV_NIMI": "Tallinn",
+        "AY_NIMI": "Mustam�e linnaosa",
+        "L_AADRESS": "M�nniliiva tn 6",
+        "REGISTR": "2010\/05\/20",
+        "MUUDET": "2021\/12\/16",
+        "SIHT1": "�ldkasutatav maa",
+        "SIHT2": null,
+        "SIHT3": null,
+        "SO_PRTS1": 100,
+        "SO_PRTS2": 0,
+        "SO_PRTS3": 0,
+        "PINDALA": 92867.0,
+        "RUUMPIND": 92867.0,
+        "REG_YHIK": "M",
+        "HARITAV": 0.0,
+        "ROHUMAA": 0.0,
+        "METS": 35273.0,
+        "OUEMAA": 0.0,
+        "MUUMAA": 57594.0,
+        "KINNISTU": "25064601",
+        "MOOTVIIS": "m��distatud, L-EST",
+        "MOOTJA": "O� Via Geo",
+        "MOODUST": "2009\/11\/27",
+        "OMVIIS": "K� vastavusseviimine seadusega",
+        "OMVORM": "Eraomand",
+        "MAKS_HIND": 367750.0,
+        "MARKETEKST": "-",
+        "EKSPORT": "2022\/05\/27"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              24.679077761431181,
+              59.394487569184854
+            ],
+            [
+              24.679014278758675,
+              59.394641221509744
+            ],
+            [
+              24.678974913165007,
+              59.394732988583122
+            ],
+            [
+              24.682573290917837,
+              59.395189866000734
+            ],
+            [
+              24.682712655296417,
+              59.395126125146753
+            ],
+            [
+              24.683108059829188,
+              59.394979993546478
+            ],
+            [
+              24.683531177904612,
+              59.394855620219786
+            ],
+            [
+              24.683977290463595,
+              59.394754645280905
+            ],
+            [
+              24.68444183851868,
+              59.394677900145076
+            ],
+            [
+              24.684919562868053,
+              59.394626399466908
+            ],
+            [
+              24.685405193673517,
+              59.394600619416451
+            ],
+            [
+              24.68589328158879,
+              59.394600857638096
+            ],
+            [
+              24.685972044623437,
+              59.394605114809522
+            ],
+            [
+              24.686628352020072,
+              59.393024455638994
+            ],
+            [
+              24.683169871423335,
+              59.392434374804324
+            ],
+            [
+              24.682824288549678,
+              59.392861852262726
+            ],
+            [
+              24.679517789104516,
+              59.392538037769953
+            ],
+            [
+              24.679770767840004,
+              59.392851279342473
+            ],
+            [
+              24.679667902715355,
+              59.393095353044401
+            ],
+            [
+              24.679729847270313,
+              59.393493515371127
+            ],
+            [
+              24.679337610644051,
+              59.394428326537657
+            ],
+            [
+              24.679077761431181,
+              59.394487569184854
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "TUNNUS": "78405:501:0268",
+        "HKOOD": "0482",
+        "MK_NIMI": "Harju maakond",
+        "OV_NIMI": "Tallinn",
+        "AY_NIMI": "Mustam�e linnaosa",
+        "L_AADRESS": "M�nniliiva tn 7",
+        "REGISTR": "2010\/05\/20",
+        "MUUDET": "2018\/12\/21",
+        "SIHT1": "�hiskondlike ehitiste maa",
+        "SIHT2": null,
+        "SIHT3": null,
+        "SO_PRTS1": 100,
+        "SO_PRTS2": 0,
+        "SO_PRTS3": 0,
+        "PINDALA": 9231.0,
+        "RUUMPIND": 9231.0,
+        "REG_YHIK": "M",
+        "HARITAV": 0.0,
+        "ROHUMAA": 0.0,
+        "METS": 0.0,
+        "OUEMAA": 0.0,
+        "MUUMAA": 9231.0,
+        "KINNISTU": "25064701",
+        "MOOTVIIS": "m��distatud, L-EST",
+        "MOOTJA": "O� Via Geo",
+        "MOODUST": "2009\/11\/27",
+        "OMVIIS": "K� vastavusseviimine uue seadusega",
+        "OMVORM": "Eraomand",
+        "MAKS_HIND": 36550.0,
+        "MARKETEKST": "-",
+        "EKSPORT": "2022\/05\/27"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              24.679523637269959,
+              59.393417290327754
+            ],
+            [
+              24.677375795723581,
+              59.39318437995054
+            ],
+            [
+              24.676551763408611,
+              59.393612777783723
+            ],
+            [
+              24.679054547764853,
+              59.393885611815186
+            ],
+            [
+              24.678818366141744,
+              59.394445550133902
+            ],
+            [
+              24.679175638316405,
+              59.394364170717658
+            ],
+            [
+              24.679537129414392,
+              59.393502859777577
+            ],
+            [
+              24.679523637269959,
+              59.393417290327754
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "TUNNUS": "78405:501:0269",
+        "HKOOD": "0482",
+        "MK_NIMI": "Harju maakond",
+        "OV_NIMI": "Tallinn",
+        "AY_NIMI": "Mustam�e linnaosa",
+        "L_AADRESS": "M�nniliiva tn 9",
+        "REGISTR": "2010\/05\/20",
+        "MUUDET": "2020\/04\/29",
+        "SIHT1": "�hiskondlike ehitiste maa",
+        "SIHT2": "�rimaa",
+        "SIHT3": null,
+        "SO_PRTS1": 80,
+        "SO_PRTS2": 20,
+        "SO_PRTS3": 0,
+        "PINDALA": 11962.0,
+        "RUUMPIND": 11962.0,
+        "REG_YHIK": "M",
+        "HARITAV": 0.0,
+        "ROHUMAA": 0.0,
+        "METS": 5442.0,
+        "OUEMAA": 0.0,
+        "MUUMAA": 6520.0,
+        "KINNISTU": "25064801",
+        "MOOTVIIS": "m��distatud, L-EST",
+        "MOOTJA": "O� Via Geo",
+        "MOODUST": "2009\/11\/27",
+        "OMVIIS": "K� vastavusseviimine seadusega",
+        "OMVORM": "Eraomand",
+        "MAKS_HIND": 97540.0,
+        "MARKETEKST": "-",
+        "EKSPORT": "2022\/05\/27"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              24.679054547764853,
+              59.393885611815186
+            ],
+            [
+              24.676551763408611,
+              59.393612777783723
+            ],
+            [
+              24.675463142626995,
+              59.394173591403423
+            ],
+            [
+              24.676430728507107,
+              59.39429222945504
+            ],
+            [
+              24.677063332228276,
+              59.394302170186869
+            ],
+            [
+              24.678681344546092,
+              59.394476778578678
+            ],
+            [
+              24.678818366141744,
+              59.394445550133902
+            ],
+            [
+              24.679054547764853,
+              59.393885611815186
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
