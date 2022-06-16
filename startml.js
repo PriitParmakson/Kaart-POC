@@ -93,7 +93,7 @@ fetch("ml/avalik.geojson")
 
 // Lisa MUNITSIPAAL katastriüksused
 
-fetch("ml/mun.geojson")
+fetch("ml/munitsipaal.geojson")
   .then(function (response) {
     return response.json();
   })
