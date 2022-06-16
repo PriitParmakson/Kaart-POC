@@ -67,7 +67,7 @@ fetch("ml/era.geojson")
         color: 'tomato',
         weight: 2,
         fillColor: 'tomato',
-        fillOpacity: 0,3
+        fillOpacity: 0.3
       },
       onEachFeature: katPopup,
     }).addTo(map);
