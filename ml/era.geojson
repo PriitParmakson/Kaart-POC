@@ -513,6 +513,69 @@
           ]
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "TUNNUS": "78405:501:0070",
+        "HKOOD": "0482",
+        "MK_NIMI": "Harju maakond",
+        "OV_NIMI": "Tallinn",
+        "AY_NIMI": "Mustam�e linnaosa",
+        "L_AADRESS": "J. S�tiste tee 29a",
+        "REGISTR": "2002\/01\/10",
+        "MUUDET": "2018\/12\/21",
+        "SIHT1": "Tootmismaa",
+        "SIHT2": null,
+        "SIHT3": null,
+        "SO_PRTS1": 100,
+        "SO_PRTS2": 0,
+        "SO_PRTS3": 0,
+        "PINDALA": 2100.0,
+        "RUUMPIND": 2100.0,
+        "REG_YHIK": "M",
+        "HARITAV": 0.0,
+        "ROHUMAA": 0.0,
+        "METS": 0.0,
+        "OUEMAA": 1917.0,
+        "MUUMAA": 183.0,
+        "KINNISTU": "23876301",
+        "MOOTVIIS": "m��distatud, transformeeritud",
+        "MOOTJA": "Osa�hing Aakermaa",
+        "MOODUST": "2001\/08\/06",
+        "OMVIIS": "K� vastavusseviimine uue seadusega",
+        "OMVORM": "Eraomand",
+        "MAKS_HIND": 41600.0,
+        "MARKETEKST": "-",
+        "EKSPORT": "2022\/05\/27"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              24.678282173052889,
+              59.394975077903474
+            ],
+            [
+              24.67843115046821,
+              59.394605809979261
+            ],
+            [
+              24.677569187832578,
+              59.394515458123912
+            ],
+            [
+              24.677420201506429,
+              59.394884725084289
+            ],
+            [
+              24.678282173052889,
+              59.394975077903474
+            ]
+          ]
+        ]
+      }
     }
   ]
 }
