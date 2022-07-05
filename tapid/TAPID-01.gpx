@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with BasicAirData GPS Logger for Android - ver. 3.1.4 -->
+<!-- Track 15 = 269 TrackPoints + 11 Placemarks -->
+
+<!-- Track Statistics (based on Total Time | Time in Movement): -->
+<!--  Distance = 287 m -->
+<!--  Duration = 07:59 | 01:49 -->
+<!--  Altitude Gap = 51 m -->
+<!--  Max Speed = 6 km/h -->
+<!--  Avg Speed = 2,2 | 9,5 km/h -->
+<!--  Direction = N -->
+<!--  Activity = walking -->
+
+<gpx version="1.0"
+     creator="BasicAirData GPS Logger 3.1.4"
+     xmlns="http://www.topografix.com/GPX/1/0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<name>GPS Logger 20220705-200832</name>
+<desc>Täpid</desc>
+<time>2022-07-05T19:31:17Z</time>
+<keywords>walking</keywords>
+<bounds minlat="59.39123388" minlon="24.68004806" maxlat="59.39259856" maxlon="24.68038859" />
+
+<wpt lat="59.39125156" lon="24.68010480"><ele>17.337</ele><time>2022-07-05T17:08:36Z</time><name>P k</name><sat>17</sat></wpt>
+<wpt lat="59.39139182" lon="24.68011641"><ele>35.405</ele><time>2022-07-05T17:08:57Z</time><name>P k</name><sat>9</sat></wpt>
+<wpt lat="59.39148379" lon="24.68016329"><ele>54.144</ele><time>2022-07-05T17:09:13Z</time><name>R p</name><sat>9</sat></wpt>
+<wpt lat="59.39157409" lon="24.68010134"><ele>51.738</ele><time>2022-07-05T17:09:35Z</time><name>R k</name><sat>9</sat></wpt>
+<wpt lat="59.39159764" lon="24.68015492"><ele>53.342</ele><time>2022-07-05T17:09:47Z</time><name>P k</name><sat>18</sat></wpt>
+<wpt lat="59.39167880" lon="24.68018229"><ele>54.389</ele><time>2022-07-05T17:10:08Z</time><name>R k</name><sat>22</sat></wpt>
+<wpt lat="59.39183481" lon="24.68016958"><ele>58.569</ele><time>2022-07-05T17:10:30Z</time><name>R p</name><sat>24</sat></wpt>
+<wpt lat="59.39195170" lon="24.68021315"><ele>53.328</ele><time>2022-07-05T17:10:54Z</time><name>R p</name><sat>22</sat></wpt>
+<wpt lat="59.39216240" lon="24.68038406"><ele>58.878</ele><time>2022-07-05T17:11:16Z</time><name>R p</name><sat>22</sat></wpt>
+<wpt lat="59.39237529" lon="24.68028575"><ele>52.302</ele><time>2022-07-05T17:11:45Z</time><name>R p</name><sat>21</sat></wpt>
+<wpt lat="59.39182864" lon="24.68006972"><ele>63.736</ele><time>2022-07-05T17:16:06Z</time><name>P k</name><sat>20</sat></wpt>
+
+</gpx>
+ 
