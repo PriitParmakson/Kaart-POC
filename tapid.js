@@ -55,6 +55,16 @@ function katPopup(feature, layer) {
   layer.bindPopup(content);
 }
 
+// Puu/kännu ikoon
+var treeIcon = L.IconMaterial.icon({
+  icon: 'cancel',            // Name of Material icon
+  iconColor: 'white',              // Material icon color (could be rgba, hex, html name...)
+  markerColor: 'saddlebrown',  // Marker fill color
+  outlineColor: 'yellow',            // Marker outline color
+  outlineWidth: 1,                   // Marker outline width 
+  iconSize: [31, 42]                 // Width and height of the icon
+})
+
 // Lisa katastriüksuste piirid
 fetch("N_M_KAT.geojson")
   .then(function (response) {
