@@ -280,3 +280,12 @@ a.leaflet-control-about-close:hover {
 .ikoon { font-family: 'Material Icons';
   font-size: 48px;
 }
+
+/* --- Amazonas --- */
+.text-labels {
+  font-size: 2em;
+  font-weight: 700;
+  color: black;
+  width: 500px;
+  /* Use color, background, set margins for offset, etc */
+}
