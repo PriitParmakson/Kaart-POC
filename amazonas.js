@@ -127,7 +127,7 @@ fetch("N_M_KAT.geojson")
     }).addTo(map);
   });
 
-
+*/
 // Lisa MKA piir.
 
 function onEachFeature(feature, layer) {
@@ -153,8 +153,6 @@ fetch("MKA.geojson")
       // onEachFeature: onEachFeature,
     }).addTo(map);
   });
-
-*/
 
 // Leaflet Layers Control
 // https://leafletjs.com/examples/layers-control/
