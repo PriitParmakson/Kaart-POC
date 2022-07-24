@@ -98,6 +98,18 @@ var myTextLabel = L.marker(textLatLng, {
     zIndexOffset: 1000     // Make appear above other map features
 }).addTo(map);
 
+// Häireala
+L.circle(
+  [59.393712, 24.689243],
+  {
+    radius: 200,
+    color: 'tomato',
+    weight: 2,
+    fill: true,
+    fillColor: 'tomato',
+    fillOpacity: 0.2
+  }).addTo(map);
+
 // Lisa MKA piir.
 
 function onEachFeature(feature, layer) {
