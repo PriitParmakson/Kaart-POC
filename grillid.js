@@ -71,8 +71,8 @@ var natura2000Layer = L.tileLayer.wms(
 var grillIcon = L.IconMaterial.icon({
   icon: 'cancel',            // Name of Material icon
   iconColor: 'white',              // Material icon color (could be rgba, hex, html name...)
-  markerColor: 'saddlebrown',  // Marker fill color
-  outlineColor: 'yellow',            // Marker outline color
+  markerColor: 'red',  // Marker fill color
+  outlineColor: 'red',            // Marker outline color
   outlineWidth: 1,                   // Marker outline width 
   iconSize: [31, 42]                 // Width and height of the icon
 })
@@ -100,7 +100,6 @@ var myTextLabel = L.marker(textLatLng, {
 }).addTo(map);
 */
 
-/*
 // Lisa MKA piir.
 
 function onEachFeature(feature, layer) {
@@ -126,7 +125,6 @@ fetch("MKA.geojson")
       // onEachFeature: onEachFeature,
     }).addTo(map);
   });
-*/
 
 // Leaflet Layers Control
 // https://leafletjs.com/examples/layers-control/
