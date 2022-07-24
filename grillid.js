@@ -89,16 +89,14 @@ L.marker([59.393239, 24.690075], {icon: grillIcon})
 L.marker([59.393292, 24.68847], {icon: grillIcon})
   .bindTooltip("Grill 3").addTo(map);
 
-/*
-var textLatLng = [59.39201754, 24.68194576];  
+var textLatLng = [59.39414, 24.686294];  
 var myTextLabel = L.marker(textLatLng, {
     icon: L.divIcon({
-        className: 'text-labels',   // Set class for CSS styling
-        html: '"Amazonas" — märgala Nõmme-Mustamäe maastikukaitsealal (Sütiste metsas)'
+        className: 'sotsiaaltekst',   // Set class for CSS styling
+        html: '"Sotsiaalsed probleemkohad'
     }),
     zIndexOffset: 1000     // Make appear above other map features
 }).addTo(map);
-*/
 
 // Lisa MKA piir.
 

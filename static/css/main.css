@@ -289,3 +289,12 @@ a.leaflet-control-about-close:hover {
   width: 500px;
   /* Use color, background, set margins for offset, etc */
 }
+
+/* --- Sotsiaalsed probleemkohad --- */
+.text-labels {
+  font-size: 2em;
+  font-weight: 700;
+  color: tomato;
+  width: 500px;
+  /* Use color, background, set margins for offset, etc */
+}
