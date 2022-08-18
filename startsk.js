@@ -27,7 +27,7 @@ var map = L.map(
   'Kaart',
   {
     crs: crs,
-    center: L.latLng(59.391539, 24.683006),
+    center: L.latLng(59.38729, 24.650478),
     zoom: 15, // Oli: 7.
     minZoom: 3,
     maxZoom: 24,
