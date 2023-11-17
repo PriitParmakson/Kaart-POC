@@ -50,12 +50,11 @@ updateMap(config.map);
 initBasemaps(config.basemaps);
 
 function katPopup(feature, layer) {
-  var content = feature.properties.TUNNUS + " " + 
-  feature.properties.L_AADRESS + " " + feature.properties.OMVORM;
+  var content = feature.properties.tee_nimi;
   layer.bindPopup(content);
 }
 
-fetch("N_M_KAT.geojson")
+fetch("tanavad.json")
   .then(function (response) {
     return response.json();
   })
@@ -73,65 +72,4 @@ fetch("N_M_KAT.geojson")
     }).addTo(map);
   });
 
-// Lisa MKA piir.
-
-function onEachFeature(feature, layer) {
-  layer.bindPopup(feature.properties.nimi);
-}
-
-// fetch("kr_kaitsealaPolygon.geojson")
-fetch("MKA.geojson")
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (data) {
-    // use geoJSON. Vt: https://leafletjs.com/examples/geojson/,
-    // sh stiili määramine.
-    L.geoJSON(data, {
-      style: {
-        color: 'green',
-        weight: 3,
-        fillColor: 'green',
-        fillOpacity: 0
-      },
-      interactive: false
-      // onEachFeature: onEachFeature,
-    }).addTo(map);
-  });
-
-
-// Lisa Staadioni metsa piir
-
-var staadioniMetsaPunktid = [
-  [59.39464, 24.66211],
-  [59.395369, 24.667308],
-  [59.393402, 24.668468],
-  [59.393934, 24.673521],
-  [59.39278, 24.674062],
-  [59.391375, 24.663986]
-];
-var staadioniMets = L.polygon(
-    staadioniMetsaPunktid,
-    {
-      color: 'green',
-      weight: 5,
-      fillColor: 'green',
-      fillOpacity: 0.4
-    }
-  ).addTo(map);
-
-// Leaflet Layers Control
-// https://leafletjs.com/examples/layers-control/
-
-// Leaflet API kokkuvõtlikult
-// https://docs.eegeo.com/eegeo.js/v0.1.759/docs/leaflet/L.LayerGroup/
-
-// Bubbling events
-// https://codepen.io/jmfolds/pen/NvEbPN
-
-// Leaflet: How to style my polygons in a GeoJSON layer?
-// https://gis.stackexchange.com/questions/182986/leaflet-how-to-style-my-polygons-in-a-geojson-layer
-
-// Layer Ordering in leaflet.js
-// https://stackoverflow.com/questions/12848812/layer-ordering-in-leaflet-js
 
