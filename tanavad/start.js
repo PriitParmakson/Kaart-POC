@@ -64,7 +64,7 @@ fetch("tanavad.json")
     L.geoJSON(data, {
       style: {
         color: 'tomato',
-        weight: 1,
+        weight: 5,
         fillColor: 'green',
         fillOpacity: 0
       },
@@ -72,4 +72,61 @@ fetch("tanavad.json")
     }).addTo(map);
   });
 
+// Lisa POC
 
+var RabaveerePunktid = [
+  [
+    535543.771,
+    6582369.94
+  ],
+  [
+    535527.823,
+    6582372.66
+  ],
+  [
+    535508.59,
+    6582377.3
+  ],
+  [
+    535494.13,
+    6582379.95
+  ],
+  [
+    535488.02,
+    6582379.95
+  ],
+  [
+    535482.72,
+    6582378.32
+  ],
+  [
+    535480.07,
+    6582375.47
+  ],
+  [
+    535476.61,
+    6582353.86
+  ],
+  [
+    535474.059,
+    6582351.07
+  ],
+  [
+    535434.901,
+    6582348.74
+  ],
+  [
+    535429.159,
+    6582455.78
+  ]
+];
+var Rabaveere = L.polygon(
+    RabaveerePunktid,
+    {
+      color: 'green',
+      weight: 5,
+      fillColor: 'green',
+      fillOpacity: 0.4
+    }
+  ).addTo(map);
+  
