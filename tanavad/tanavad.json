@@ -1,0 +1,85 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:EPSG::3301"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "tee_number": 7841910,
+        "tee_nimi": "Rabaveere tänav",
+        "soidutee_nr": 1,
+        "alguskm": 0.0,
+        "loppkm": 0.238,
+        "pikkus": 238,
+        "algteeosa": 1,
+        "algteeosa_meeter": 0,
+        "loppteeosa": 1,
+        "loppteeosa_meeter": 238,
+        "kov_kood": "0784",
+        "kov_nimi": "Tallinn",
+        "mk_kood": "0037",
+        "mk_nimi": "Harju maakond",
+        "markus": "",
+        "oid": 8402174,
+        "tee_oid": 8294526,
+        "teeosa_oid": 8294528,
+        "lopp_teeosa_oid": 8294528,
+        "muudetud_kpv": "2021\/09\/21 00:00:00"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            535543.771,
+            6582369.94
+          ],
+          [
+            535527.823,
+            6582372.66
+          ],
+          [
+            535508.59,
+            6582377.3
+          ],
+          [
+            535494.13,
+            6582379.95
+          ],
+          [
+            535488.02,
+            6582379.95
+          ],
+          [
+            535482.72,
+            6582378.32
+          ],
+          [
+            535480.07,
+            6582375.47
+          ],
+          [
+            535476.61,
+            6582353.86
+          ],
+          [
+            535474.059,
+            6582351.07
+          ],
+          [
+            535434.901,
+            6582348.74
+          ],
+          [
+            535429.159,
+            6582455.78
+          ]
+        ]
+      }
+    }
+  ]
+}

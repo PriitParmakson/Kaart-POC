@@ -13,7 +13,7 @@ Käivitamine: https://priitparmakson.github.io/Kaart-POC/
 - Javascript: `start.js`.
 
 ## Tänavate kaart
-Käivitamine: https://priitparmakson.github.io/tanavad/index.html
+Käivitamine: https://priitparmakson.github.io/Kaart-POC/tanavad/index.html
 - HTML: `tanavad/index.html`
 - andmed: `tanavad/tanavad.json`
 - Javascript: `tanavad/start.js`.
