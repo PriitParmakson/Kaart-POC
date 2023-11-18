@@ -61,6 +61,7 @@ function kuvaTänavaNimi(feature, layer) {
   var teeNimi = feature.properties.tee_nimi;
   var lat = feature.geometry.coordinates[0][0];
   var lng = feature.geometry.coordinates[0][1];
+  console.log("lat, lng = ", lat, lng);
   var marker = L.marker([lat, lng]).addTo(map);
   marker.bindPopup(teeNimi).openPopup();
   // layer.bindPopup(teeNimi);
