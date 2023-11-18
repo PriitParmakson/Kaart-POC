@@ -32,7 +32,7 @@ var map = L.map(
   'Kaart',
   {
     crs: crs,
-    center: L.latLng(59.391539, 24.683006),
+    center: L.latLng(59.36876, 24.662562),
     zoom: 15, // Oli: 7.
     minZoom: 3,
     maxZoom: 24,
@@ -57,9 +57,9 @@ initBasemaps(config.basemaps);
 // Hüpiktekst: Tänava nimi
 function kuvaTänavaNimi(feature, layer) {
   var teeNimi = feature.properties.tee_nimi;
-  var c1 = feature.geometry.coordinates[0][0];
-  var c2 = feature.geometry.coordinates[0][0];
-  var marker = L.marker([c1, c2]).addTo(map);
+  var lat = feature.geometry.coordinates[0][0];
+  var lng = feature.geometry.coordinates[0][1];
+  var marker = L.marker([lat, lng]).addTo(map);
   marker.bindPopup(teeNimi).openPopup();
   // layer.bindPopup(teeNimi);
 }
