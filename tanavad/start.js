@@ -63,7 +63,8 @@ function kuvaTänavaNimi(feature, layer) {
   var c2 = feature.geometry.coordinates[0][1];
   console.log("c1, c2 = ", c1, c2);
   var marker = L.marker([c2, c1]).addTo(map);
-  marker.bindPopup(teeNimi).openPopup();
+  marker.bindTooltip(teeNimi, { permanent: true }).openTooltip();
+  // marker.bindPopup(teeNimi).openPopup();
   // layer.bindPopup(teeNimi);
 }
 
