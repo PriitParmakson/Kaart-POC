@@ -1,12 +1,17 @@
 // Aluskaardi tailid on L-EST'97s. seadistame kaardi.
 // crs on "koordinaatsüsteem".
-var crs = new L.Proj.CRS(
-  'EPSG:3301',
+
+var proj1 =
   '+proj=lcc +lat_1=59.33333333333334 +lat_2=58 +lat_0=57.51755393055556 ' +
   '+lon_0=24 +x_0=500000 +y_0=6375000 ' +
   '+ellps=GRS80 ' +
   '+towgs84=0,0,0,0,0,0,0 ' +
   '+units=m +no_defs',
+  proj2 = '+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs ';
+
+var crs = new L.Proj.CRS(
+  'EPSG:3301',
+  proj1,
   {
     resolutions: [
       4000, 2000, 1000, 500, 250, 125, 62.5, 31.25, 15.625, 7.8125, 3.90625,
@@ -49,6 +54,7 @@ updateMap(config.map);
 
 initBasemaps(config.basemaps);
 
+// Hüpiktekst: Tänava nimi
 function katPopup(feature, layer) {
   var content = feature.properties.tee_nimi;
   layer.bindPopup(content);
@@ -59,6 +65,11 @@ fetch("tanavad.json")
     return response.json();
   })
   .then(function (data) {
+    // Teisenda EPSG:3301 (Eesti koordinaadistik) -> CRS84
+    for (var i = 0; i < data.features.length; i++) {
+      var convert = proj4(proj1, proj2, data.features[i].geometry.coordinates);
+      data.features[i].geometry.coordinates = convert;
+    }
     // use geoJSON. Vt: https://leafletjs.com/examples/geojson/,
     // sh stiili määramine.
     L.geoJSON(data, {
@@ -72,7 +83,7 @@ fetch("tanavad.json")
     }).addTo(map);
   });
 
-// Lisa POC
+/* Lisa POC
 
 var RabaveerePunktid = [
   [
@@ -129,4 +140,16 @@ var Rabaveere = L.polygon(
       fillOpacity: 0.4
     }
   ).addTo(map);
-  
+*/
+
+// Märkmed
+
+// http://proj4js.org/
+
+// https://gis.stackexchange.com/questions/116198/wfs-with-epsg3301-projection-using-leaflet
+
+// https://www.perfectline.co/blog/2011/02/proj4js-l-est-and-geopoint/
+
+// https://stackoverflow.com/questions/65164430/how-to-reproject-geojson-without-crs-property-to-wgs84-to-use-react-leaflet
+
+// https://mygeodata.cloud/converter/
