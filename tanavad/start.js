@@ -55,9 +55,13 @@ updateMap(config.map);
 initBasemaps(config.basemaps);
 
 // Hüpiktekst: Tänava nimi
-function katPopup(feature, layer) {
-  var content = feature.properties.tee_nimi;
-  layer.bindPopup(content);
+function kuvaTänavaNimi(feature, layer) {
+  var teeNimi = feature.properties.tee_nimi;
+  var c1 = feature.geometry.coordinates[0][0];
+  var c2 = feature.geometry.coordinates[0][0];
+  var marker = L.marker([c1, c2]).addTo(map);
+  marker.bindPopup(teeNimi).openPopup();
+  // layer.bindPopup(teeNimi);
 }
 
 fetch("andmed_01.geojson")
@@ -74,6 +78,6 @@ fetch("andmed_01.geojson")
         fillColor: 'green',
         fillOpacity: 0
       },
-      onEachFeature: katPopup,
+      onEachFeature: kuvaTänavaNimi,
     }).addTo(map);
   });

@@ -3,6 +3,11 @@
 Nõmme (laiemalt: Tallinna) tänavate kaart.
 - tänavad esiletõstetud
 
+Käivitamine: https://priitparmakson.github.io/Kaart-POC/tanavad/index.html
+- HTML: `tanavad/index.html`
+- andmed: `tanavad/tanavad.json`
+- Javascript: `tanavad/start.js`.
+
 Kontseptsioon:
 - Tee A :
   - Teeregistri WFS teenusest laadida GeoJSON andmed alla
@@ -17,6 +22,12 @@ Kontseptsioon:
 - Tee C :
   - Saavutada soovitud tulemus Maa-ameti Teeregistri kaardirakenduse (kohandamise) abil
     - Aluskaardi paistvus -> väiksemaks
+
+## Tee B : Märkmed
+
+EPSG:4326, also known as the WGS84 projection (because it's based on WGS84's ellipsoid)
+"Geographic Coordinate Systems 101: A Primer for Software Generalists"
+https://8thlight.com/insights/geographic-coordinate-systems-101#:~:text=EPSG%3A4326%2C%20also%20known%20as,issues%20of%20the%20Web%20Mercator.
 
 ## Tee A : Märkmed
 // Märkmed
