@@ -54,7 +54,9 @@ updateMap(config.map);
 
 initBasemaps(config.basemaps);
 
-// Hüpiktekst: Tänava nimi
+var keskpunkt = L.marker([59.36876, 24.662562]).addTo(map);
+
+// Tänava nimi
 function kuvaTänavaNimi(feature, layer) {
   var teeNimi = feature.properties.tee_nimi;
   var lat = feature.geometry.coordinates[0][0];
