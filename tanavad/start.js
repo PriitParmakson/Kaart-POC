@@ -60,16 +60,11 @@ function katPopup(feature, layer) {
   layer.bindPopup(content);
 }
 
-fetch("tanavad.json")
+fetch("andmed_01.geojson")
   .then(function (response) {
     return response.json();
   })
   .then(function (data) {
-    // Teisenda EPSG:3301 (Eesti koordinaadistik) -> CRS84
-    for (var i = 0; i < data.features.length; i++) {
-      var convert = proj4(proj1, proj2, data.features[i].geometry.coordinates);
-      data.features[i].geometry.coordinates = convert;
-    }
     // use geoJSON. Vt: https://leafletjs.com/examples/geojson/,
     // sh stiili määramine.
     L.geoJSON(data, {
@@ -82,74 +77,3 @@ fetch("tanavad.json")
       onEachFeature: katPopup,
     }).addTo(map);
   });
-
-/* Lisa POC
-
-var RabaveerePunktid = [
-  [
-    535543.771,
-    6582369.94
-  ],
-  [
-    535527.823,
-    6582372.66
-  ],
-  [
-    535508.59,
-    6582377.3
-  ],
-  [
-    535494.13,
-    6582379.95
-  ],
-  [
-    535488.02,
-    6582379.95
-  ],
-  [
-    535482.72,
-    6582378.32
-  ],
-  [
-    535480.07,
-    6582375.47
-  ],
-  [
-    535476.61,
-    6582353.86
-  ],
-  [
-    535474.059,
-    6582351.07
-  ],
-  [
-    535434.901,
-    6582348.74
-  ],
-  [
-    535429.159,
-    6582455.78
-  ]
-];
-var Rabaveere = L.polygon(
-    RabaveerePunktid,
-    {
-      color: 'green',
-      weight: 5,
-      fillColor: 'green',
-      fillOpacity: 0.4
-    }
-  ).addTo(map);
-*/
-
-// Märkmed
-
-// http://proj4js.org/
-
-// https://gis.stackexchange.com/questions/116198/wfs-with-epsg3301-projection-using-leaflet
-
-// https://www.perfectline.co/blog/2011/02/proj4js-l-est-and-geopoint/
-
-// https://stackoverflow.com/questions/65164430/how-to-reproject-geojson-without-crs-property-to-wgs84-to-use-react-leaflet
-
-// https://mygeodata.cloud/converter/
