@@ -59,10 +59,10 @@ var keskpunkt = L.marker([59.36876, 24.662562]).addTo(map);
 // Tänava nimi
 function kuvaTänavaNimi(feature, layer) {
   var teeNimi = feature.properties.tee_nimi;
-  var lat = feature.geometry.coordinates[0][0];
-  var lng = feature.geometry.coordinates[0][1];
-  console.log("lat, lng = ", lat, lng);
-  var marker = L.marker([lat, lng]).addTo(map);
+  var c1 = feature.geometry.coordinates[0][0];
+  var c2 = feature.geometry.coordinates[0][1];
+  console.log("c1, c2 = ", c1, c2);
+  var marker = L.marker([c2, c1]).addTo(map);
   marker.bindPopup(teeNimi).openPopup();
   // layer.bindPopup(teeNimi);
 }
